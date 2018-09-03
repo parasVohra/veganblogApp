@@ -1,0 +1,82 @@
+.homeContentWrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20rem 20rem 20rem;
+    grid-template-areas: 
+    "quote"
+    "blogRef"
+    "recipeRef";
+}
+
+.homeSlider{
+    grid-area: quote;
+}
+
+
+.blogRef{
+    grid-area: blogRef;
+    background-color: darkgray;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.blogThumImg{
+    grid-row: 3/10;
+    grid-column: 2/8;
+    background-color: blueviolet;
+    background: url('../../../assets/images/Blog1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blogThumText{
+    grid-row: 4/11;
+    grid-column: 5/12;
+    background-color: salmon;
+    padding-left: 7rem;
+    padding-top: 1rem;
+}
+
+.blogBtn{
+    grid-row: 9/10;
+    grid-column: 9/11;
+    background-color: grey;
+}
+
+.recipeRef{
+    grid-area: recipeRef;
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.recipeThumText{
+    grid-row: 4/11;
+    grid-column: 2/9;
+    background-color: salmon;
+    padding-left: 0.5rem;
+    padding-right: 6rem;
+    padding-top: 1rem;
+}
+
+.recipeThumImg{
+    grid-row: 3/10;
+    grid-column: 6/12;
+    background-color: blueviolet;
+    background: url('../../../assets/images/Blog1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.recipeBtn{
+    grid-row: 9/10;
+    grid-column: 3/5;
+    background-color: grey;
+}
+
+
+

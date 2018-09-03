@@ -1,0 +1,10 @@
+<div class="wrap" *ngIf="blogs">
+  <div *ngFor="let blog of blogs.blogs">
+      <div  class="listContainer" [routerLink]="['/blog', blog.blogId]" >
+        <div class="blogTitles">{{blog.blogTitle}}</div> 
+        <div class="blogImage" [style.background-image]="'url(' + blog.blogImage + ')'"></div>
+      </div>
+  </div>
+  
+</div>
+ 

@@ -1,0 +1,16 @@
+<div class="wrapper" *ngIf="recipe">
+  <div *ngFor="let recipe of recipe.recipes">
+      <div  class="repContainer" [routerLink]="['/recipe', recipe.recipeId]">
+        <div class="RecipeTitles">
+          {{recipe.recipeTitle}}
+          <br>
+          <br>
+  
+          {{recipe.cookingTime}}
+        </div> 
+        <div class="RecipeImage" [style.background-image]="'url(' + recipe.coverImage + ')'"></div>
+   
+      </div>
+  </div>
+    
+</div>

@@ -1,0 +1,18 @@
+<div class="headerContainer">
+  <div class="logo">The VeganHood</div>
+  <div class="menuBtn" (click)="showMenu()">
+    <div class="firstBar" [@barHide]="barState"></div>
+    <div class="secondBar" [@barNRotate]="stateN"></div>
+    <div class="thirdBar"[@barPRotate]="stateP"></div>
+    <div class="fourthBar" [@barHide]="barState"></div>
+  </div>
+  <div class="menuBox" [@showMenu]="showBox">
+    <div @listAnimation>
+        <div class="home Link" [routerLinkActiveOptions]="{ exact: true}" routerLinkActive="activeRoute" routerLink="/" (click)="hideMenu()">Home</div>
+        <div class="blogList Link" routerLinkActive="activeRoute" routerLink="/blogs" (click)="hideMenu()">Blog</div>
+        <div class="recipe Link" routerLinkActive="activeRoute" routerLink="/recipes" (click)="hideMenu()">Recipe</div>
+        <div class="reference Link" routerLinkActive="activeRoute" routerLink="/reference" (click)="hideMenu()">Refrences</div>
+    </div>
+    
+  </div>
+</div>

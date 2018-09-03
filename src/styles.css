@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: 'Alegreya Sans', sans-serif;
+    src: url('./assets/fonts/AlegreyaSans-Medium.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Love Ya Like A Sister', cursive;
+    src: url('./assets/fonts/LoveYaLikeASister.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+}

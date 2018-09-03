@@ -1,0 +1,19 @@
+<div class="blogContainer" *ngIf="blogs">
+    <div class="blogMainTitle">{{blogs.blogTitle}}</div>
+    <div class="contentWrap" *ngFor="let blog of blogs.content.titles">
+        <div class="subTitle">
+            {{blog.subTitle}}
+            <div class="blogContent" *ngFor="let para of blog.paras" >
+                <div class="paras">
+                  {{para}}
+                </div>
+            </div>
+            <div class="imageBox" *ngFor="let imgs of blog.images">
+                <div class="paraImage" [style.background-image]="'url(' + imgs + ')'" *ngIf= "imgs.length > 7 "></div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<app-comment></app-comment>

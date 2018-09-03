@@ -1,0 +1,44 @@
+.blogContainer{
+    margin: 3vw;
+    min-height: calc(100vh - 6rem );
+    position: relative;
+}
+.blogMainTitle{
+    font-size: 7vw;
+    font-weight:600;
+    text-align: center;
+
+}
+.contentWrap{
+    margin-bottom: 1rem;
+}
+.subTitle{
+    font-size:5vw;
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+
+}
+
+.blogContent{
+    font-size:4vw;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.paras{
+    text-align: justify;
+}
+
+.paraImage{
+    height: 12rem;
+    width: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

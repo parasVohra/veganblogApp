@@ -1,0 +1,33 @@
+<div class="recipeWrapper" *ngIf="recipe" >
+  <div class="recipeName">{{recipe.recipeTitle}}</div>
+  <div class="recipePic"[style.background-image]="'url(' + recipe.coverImage + ')'"></div>
+  <div class="optionBox">
+    <div class="ingBtn" [ngClass]="{'ing': is1Active} " (click) = "toggle1()" >
+      Ingedients
+    </div>
+    <div class="dirBtn" [ngClass]="{'dir': is2Active} " (click) = "toggle2()">
+      Directions
+    </div>
+  </div>
+
+
+  <div class="recipeContentBox">
+    
+    <div class="ingBox" [ngClass]="{'ingVisible': is1Active}">
+        <div class="ingDetails" *ngFor="let ing of recipe.ingredients; let i = index">
+          <div class="index">{{i+1 }}.  </div> {{  ing}} <br> <br>
+        </div>
+    </div>
+    
+
+    <div class="dirBox" [ngClass]="{'dirVisible': is2Active}">
+        <div class="dirDetails" *ngFor="let dir of recipe.directions ; let i = index">
+          <div class="index">{{i+1 }}.   </div> {{  dir}} <br> <br>
+        </div>
+    </div>  
+    
+  </div>
+
+</div>
+
+<app-comment></app-comment>
