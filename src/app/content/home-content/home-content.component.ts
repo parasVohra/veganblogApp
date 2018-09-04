@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home-content.component.html',
   styleUrls: ['./home-content.component.css']
 })
+
 export class HomeContentComponent implements OnInit {
 
   constructor() { }
@@ -12,7 +13,10 @@ export class HomeContentComponent implements OnInit {
   
 
   ngOnInit() {
+   console.log("edited in mac");
   }
+
+
 
 
 
