@@ -28,6 +28,8 @@ export class CommentComponent implements OnInit {
 
   match:boolean = false;
 
+  message: string;
+
 
   pageType:any;
   pageId:any;
@@ -98,6 +100,11 @@ export class CommentComponent implements OnInit {
     
   }
 
+
+  showAlert(msg){
+    
+  }
+
   
 
 
@@ -106,8 +113,17 @@ export class CommentComponent implements OnInit {
   addComment(event){
     console.log(this.cName+", "+ this.cComment);
 
+    
 
-    // getting active page type and id
+    if( this.cName = ""){
+      this.message = 'Please enter name';
+      this.showAlert(this.message)
+    }
+    else if(this.cComment =""){
+      this.message = 'Please enter comment';
+    }
+    else {
+      // getting active page type and id
     this.id = this.activeRoute.params.subscribe(params => { 
       this.typeID = params['id']; 
       console.log(this.typeID + ", " + this.activeRoute.snapshot.data['type']);
@@ -140,7 +156,8 @@ export class CommentComponent implements OnInit {
     
     // reseting input value after post request 
     this.cName ='';
-    this.cComment= '';
+    this.cComment = '';
+    }
     
   }
 
