@@ -1,16 +1,16 @@
-<div class="homeContentWrapper">
+<div class="homeContentWrapper" *ngIf="recipe">
   <div class="homeSlider">
     <app-slider></app-slider>
   </div>
-  <div class="blogRef">
-    <div class="blogThumText"> This is just text for testing donst take it seriously</div>
-    <div class="blogThumImg"></div>
-    <div class="blogBtn"></div>
+  <div class="blogRef" [routerLink]="['/blog', blogs.blogId]">
+    <div class="blogThumText"> {{blogs.blogTitle}}</div>
+    <div class="blogThumImg"  [style.background-image]="'url(' + blogs.blogImage + ')'"></div>
+    <div class="blogBtn">More</div>
   </div>
-  <div class="recipeRef">
-    <div class="recipeThumText"> This is just text for testing donst take it seriously</div>
-    <div class="recipeThumImg"></div>
-    <div class="recipeBtn"></div>
+  <div class="recipeRef" [routerLink]="['/recipe', recipe.recipeId]">
+    <div class="recipeThumText"> {{recipe.recipeTitle}}</div>
+    <div class="recipeThumImg"  [style.background-image]="'url(' + recipe.coverImage + ')'"></div>
+    <div class="recipeBtn">More</div>
   </div>
 </div>
 

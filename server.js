@@ -8,7 +8,7 @@ const router = require('./backend/routes/routes')
 
 
 //conection to mongodb
-mongoose.connect('mongodb://localhost:27017/test', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://paras966:parasvohra966@cluster0-jjlz1.mongodb.net/test?retryWrites=true', { useNewUrlParser: true });
 //mongoose.connect('mongodb+srv://paras966:parasvohra966@cluster0-jjlz1.mongodb.net/test?retryWrites=true');
 
 let db = mongoose.connection;

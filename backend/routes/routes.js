@@ -54,13 +54,7 @@ router.get('/',(req, res) => {
 })
 
 
-router.post('/fuck', (req, res) => {
-    
-    var obj = JSON.parse(fs.readFileSync('./backend/appData/blogData.json', 'utf8'));
-    console.log(req.body);
-    res.send(obj)
-})
-
+// saving comments 
 router.post('/comment',(req,res) =>{
     var data = req.body;
     var date = new Date();
@@ -90,6 +84,8 @@ router.post('/comment',(req,res) =>{
 })
 
 
+
+//getting comments
 router.post('/Comments',(req, res) =>{
     console.log("got request at server")
     var data = req.body
@@ -113,10 +109,13 @@ router.post('/deleteAll',(req,res)=>{
     Comment.remove({}, function(err, msg){
         if(err){
             console.log(err);
+            res.end();
             return;
         }
         else{
+            res.send({msgs:'deleted'})
             console.log(msg);
+            res.end();
             return;
         }
     })
@@ -130,11 +129,13 @@ router.post('/deleteOne',(req,res)=>{
     Comment.deleteOne({name: data}, function(err, msg){
         if(err){
             console.log(err);
+            res.end();
             return;
         }
         else{
             console.log(msg);
             res.send({msgs:'deleted'})
+            res.end();
             return;
         }
     })
