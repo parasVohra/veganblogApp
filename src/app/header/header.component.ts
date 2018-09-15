@@ -55,13 +55,13 @@ import {
       transition('show <=> hide', animate('300ms ease-in-out')),
     ]),
     trigger('listAnimation', [
-      transition(':enter', [ 
+      transition('* => *', [ 
         query('.Link', [
           animate('1s', style({ opacity: 0, transform: 'translateX(100px)' }))
         ]),
-        query('.Link ', [
-          stagger(200, [
-            animate('1s ease-in', style({ opacity: 1 , transform:'translateX(0)'}))
+        query('.Link', [
+          stagger(100, [
+            animate('1s ease-in', style({ opacity: 1 , transform: 'translateX(0)'}))
           ])
         ])
       ])

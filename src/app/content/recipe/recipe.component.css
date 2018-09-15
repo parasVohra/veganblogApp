@@ -27,18 +27,21 @@
     box-shadow: 0px 5px 9px #929292c7;
 }
 .optionBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem;
     background-color: white;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    border-bottom: 1px solid #212121;
-    border-top: 1px solid #212121;
+    border: 1px solid #212121;
+    grid-template-areas: 
+    "ingBtn dirBtn"
 }
 
 .ingBtn{
-    display: inline-block;
-    width: 50vw;
+    
+    grid-area: ingBtn;
     text-align: center;
-    height: 3rem;
     line-height: 3rem;
 }
 
@@ -56,10 +59,8 @@
 
 
 .dirBtn{
-    display: inline-block;
-    width: 50vw;
+    grid-area: dirBtn;
     text-align: center;
-    height: 3rem;
     line-height: 3rem;
 }
 
@@ -95,4 +96,12 @@
 
 .index{
     display: inline;
+}
+
+@media only screen and (min-width: 768px){
+    .recipeWrapper{
+        min-height:calc(100vh - 9rem);
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
 }

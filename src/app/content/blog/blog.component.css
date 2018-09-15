@@ -4,8 +4,10 @@
     position: relative;
 }
 .blogMainTitle{
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: #1f2d0f;
+    font-weight: bolder;
     font-size: 7vw;
-    font-weight:600;
     text-align: center;
 
 }
@@ -13,8 +15,9 @@
     margin-bottom: 1rem;
 }
 .subTitle{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
     font-size:5vw;
-    font-weight: 600;
     padding: 10px;
     margin-bottom: 0.5rem;
     margin-top: 1rem;
@@ -23,6 +26,8 @@
 }
 
 .blogContent{
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
     font-size:4vw;
     margin-top: 1rem;
     font-weight: 400;
@@ -41,4 +46,48 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px){
+    .blogContainer{
+        margin-left: 15rem;
+        margin-right: 15rem;
+        min-height: calc(100vh - 6rem );
+        position: relative;
+    }
+    .blogMainTitle{
+        font-family: 'Love Ya Like A Sister', cursive;
+         color: #1f2d0f;
+        font-weight: bolder;
+        font-size: 3rem;
+        text-align: center;
+    
+    }
+    .subTitle{
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        font-size:2rem;
+        padding: 10px;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        border-radius: 3px;
+    
+    }
+    .blogContent{
+        font-family: 'Oswald', sans-serif;
+        font-weight: normal;
+        font-size:1rem;
+        margin-top: 1rem;
+        font-weight: 400;
+    }
+    .paraImage{
+        height: 40vw;
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }

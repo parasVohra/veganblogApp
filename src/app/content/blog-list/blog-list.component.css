@@ -22,14 +22,15 @@
 }
 
 .blogTitles{
-   grid-area: titles;
-   background-color: #363636;
-   box-shadow: 1px 2px 8px #5f5f5f;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    color: lightgrey;
-    text-shadow: 1px 1px 1px black;
-    border-radius: 2px;
+    font-family: 'Love Ya Like A Sister', cursive;
+     grid-area: titles;
+     background-color: #1f2d0f;
+     box-shadow: 1px 2px 8px #5f5f5f;
+     padding-top: 1rem;
+     padding-left: 1rem;
+     color: #afbf0e;
+     text-shadow: 1px 1px 1px black;
+     border-radius: 2px;
    
 }
 
@@ -41,5 +42,42 @@
    background-size: cover;
    border-radius: 2px;
 
+}
+
+@media only screen and (min-width: 768px){
+    .wrap{
+        min-height: calc(100vh - 5rem );
+        position: relative;
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+    .listContainer{
+        display: grid;
+        grid-template-rows: 2rem minmax(8rem ,auto) 2rem;
+        grid-template-columns: repeat(6, 1fr);
+        margin-top: 2rem;
+        margin-left: 5vw;
+        margin-bottom: 2rem;
+        margin-right: 5vw;
+        grid-template-areas: 
+        "images images . . . ."
+        "images  images titles titles titles titles"
+        "images images . . . ."
+        ;
+    
+       
+    }
+    .blogTitles{
+        grid-area: titles;
+        background-color: #1f2d0f;
+        font-size: 1.2rem;
+        box-shadow: 1px 2px 8px #5f5f5f;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        color: #afbf0e;
+        text-shadow: 1px 1px 1px black;
+        border-radius: 2px;
+        
+     }
 }
 

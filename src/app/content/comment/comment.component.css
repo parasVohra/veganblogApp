@@ -24,12 +24,18 @@
 
 .nameInput{
     grid-area: name;
+    border-bottom: 1px solid grey;
+
 }
 .commentLabel{
     grid-area: lCmmt;
 }
 .commentInput{
     grid-area: comment;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid grey;
+    resize: none;
 }
 
 
@@ -42,6 +48,8 @@ input:focus{
     outline: none;
 }
 .submitBtn{
+    background-color: #212121;
+    color: white;
     grid-area: pBtn;
     box-shadow: 0px 5px 9px #929292c7;
 }
@@ -52,7 +60,7 @@ input:focus{
     display: grid;
     grid-template-columns: 0.5fr 0.8fr 0.5fr 3fr;
     grid-template-rows: auto auto auto 2rem;
-    box-shadow: 0px 5px 9px #929292c7;
+    border-bottom: 1px solid grey;
     padding: 2px;
     margin-top: 1.5rem;
     grid-gap: 5px;
@@ -110,3 +118,63 @@ input:focus{
     font-size: 3vw;
 }
 
+
+@media only screen and (min-width: 768px){
+    .newCommentBox{
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 0.5fr 1fr 1fr ;
+        grid-template-rows: 0.5fr auto 2fr;
+        grid-gap: 1rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
+        margin-bottom: 2rem;
+        grid-template-areas: 
+        " lName name . . . "
+        " lCmmt comment comment comment .  "
+        " . pBtn . . .";
+        
+    }
+    .commentDisplayBox{
+        display: grid;
+        grid-template-columns: 0.5fr 0.8fr 0.5fr 3fr;
+        grid-template-rows: auto auto auto 2rem;
+        border-bottom: 1px solid grey;
+        padding: 2px;
+        margin-top: 1.5rem;
+        grid-gap: 5px;
+        margin-left: 15rem;
+        margin-right: 15rem;
+        margin-bottom: 2rem;
+        grid-template-areas: 
+        " cName cName cName cName"
+        " cTime cTime cTime cTime"
+        " dContent dContent dContent dContent"
+        " cLike likeCount rBtn . ";
+    }
+    .cmtTitle{
+        margin-top: 3rem;
+        margin-left: 15rem;
+        margin-bottom: 1rem;
+    }
+    .commenterName{
+        grid-area: cName;
+        font-size: 1.5vw;
+        font-weight: 600;
+        text-align: left;
+        padding-left: 0rem;
+        line-height: 1rem;
+    }
+    .timeStamp{
+        grid-area: cTime;
+        padding-left: 0rem;
+        text-align: left;
+        font-size: 1.5vw;
+    
+    }
+    .commentContent{
+        grid-area: dContent;
+        padding-left: 0rem;
+        text-align: left;
+        font-size: 1.5vw;
+    }
+}

@@ -102,7 +102,7 @@ export class CommentComponent implements OnInit {
 
 
   showAlert(msg){
-    
+    alert(msg);
   }
 
   
@@ -113,14 +113,13 @@ export class CommentComponent implements OnInit {
   addComment(event){
     console.log(this.cName+", "+ this.cComment);
 
-    
-
-    if( this.cName = ""){
+    if( this.cName == ""){
       this.message = 'Please enter name';
       this.showAlert(this.message)
     }
-    else if(this.cComment =""){
+    else if(this.cComment == ""){
       this.message = 'Please enter comment';
+      this.showAlert(this.message)
     }
     else {
       // getting active page type and id
@@ -139,7 +138,6 @@ export class CommentComponent implements OnInit {
     }
 
     console.log(commentData)
-    console.log(event);
 
     let body = JSON.stringify(commentData)
     

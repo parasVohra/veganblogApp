@@ -76,7 +76,7 @@ router.post('/comment',(req,res) =>{
             }
             else{
                 console.log('res data' + comments )
-                res.send(comments)
+                res.send("Comment Saved"+comments)
     
                 return;
             }

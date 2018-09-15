@@ -1,9 +1,10 @@
 .homeContentWrapper{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20rem 20rem 20rem;
+    grid-template-rows: 20rem 3rem 20rem 20rem;
     grid-template-areas: 
     "quote"
+    "htitle"
     "blogRef"
     "recipeRef";
 }
@@ -14,6 +15,17 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.htitle{
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-weight: bold;
+    grid-area: htitle;
+    text-align: center;
+    color: #1f2d0f;
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 
@@ -27,7 +39,7 @@
 .blogThumImg{
     grid-row: 3/10;
     grid-column: 2/8;
-    box-shadow: 0px 5px 9px #929292c7;
+    box-shadow: 3px 3px 13px #000000b5;
     background-color: blueviolet;
     background: url('../../../assets/images/Blog1.jpg');
     background-position: center;
@@ -36,7 +48,10 @@
 }
 
 .blogThumText{
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-weight: bold;
     grid-row: 4/11;
+    background-color: #afbf0e;
     grid-column: 5/12;
     box-shadow: 0px 5px 9px #929292c7;
     padding-left: 7rem;
@@ -46,8 +61,10 @@
 .blogBtn{
     grid-row: 9/10;
     grid-column: 9/11;
-    background-color: #212121;
-    color:white;
+    background-color: #1f2d0f;
+    color:#afbf0e;
+    line-height: 3rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -59,6 +76,10 @@
 }
 
 .recipeThumText{
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-weight: bold;
+    background-color: #1f2d0f;
+    color: #afbf0e;
     grid-row: 4/11;
     grid-column: 2/9;
     padding-left: 0.5rem;
@@ -70,7 +91,7 @@
 .recipeThumImg{
     grid-row: 3/10;
     grid-column: 6/12;
-    box-shadow: 0px 5px 9px #929292c7;
+    box-shadow: 3px 3px 13px #000000b5;
     background-color: blueviolet;
     background: url('../../../assets/images/Blog1.jpg');
     background-position: center;
@@ -81,9 +102,62 @@
 .recipeBtn{
     grid-row: 9/10;
     grid-column: 3/5;
-    background-color: #212121;
-    color:white;
+    font-size: 1.5rem;
+    background-color: #afbf0e;
+    color:#1f2d0f;
+    line-height: 3rem;
     text-align: center;
+}
+
+
+@media only screen and (min-width: 768px){
+    .homeContentWrapper{
+        display: grid;
+        grid-template-columns: 2fr 8fr 2fr;
+        grid-template-rows: 30rem 3rem 30rem 30rem;
+        grid-template-areas: 
+        ". quote ."
+        ". htitle ."
+        ". blogRef ."
+        " . recipeRef .";
+    }
+    .blogThumText{
+        font-family: 'Love Ya Like A Sister', cursive;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #1f2d0f;
+        background-color: #afbf0e;
+        grid-row: 4/11;
+        grid-column: 5/12;
+        box-shadow: 0px 5px 9px #929292c7;
+        padding-left: 15rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+    }
+    .recipeThumText{
+        ont-family: 'Love Ya Like A Sister', cursive;
+        font-weight: bold;
+        background-color: #1f2d0f;
+        color: #afbf0e;
+        font-size: 1.5rem;
+        grid-row: 4/11;
+        grid-column: 2/9;
+        padding-left: 1rem;
+        box-shadow: 0px 5px 9px #929292c7;
+        padding-right: 15rem;
+        padding-top: 2rem;
+    }
+    .htitle{
+        font-family: 'Love Ya Like A Sister', cursive;
+        font-weight: bold;
+        grid-area: htitle;
+        text-align: center;
+        color: #1f2d0f;
+        margin-top: 3rem;
+        font-size: 5rem;
+        line-height: 3rem;
+    }
+    
 }
 
 

@@ -4,7 +4,7 @@
             "recipeId": 0,
             "recipeTitle": "Oil-Free Bread Recipe",
             "coverImage": "../../../assets/images/Bread.jpg",
-            "cookingTime" : "30 min",
+            "cookingTime" : "45 min",
             "recipeImages": [
                 "../../../assets/images/Bread.jpg",
                 "../../../assets/images/Combination.jpg"
@@ -33,7 +33,7 @@
             "recipeId": 1,
             "recipeTitle": "Oil-free Tofu and Broccoli Pasta",
             "coverImage": "../../../assets/images/Pasta.jpg",
-            "cookingTime" : "60 min",
+            "cookingTime" : "45 min",
             "recipeImages": [
                 "../../../assets/images/Pasta.jpg",
                 "../../../assets/images/Combination.jpg"

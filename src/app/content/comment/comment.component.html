@@ -1,3 +1,12 @@
+<div class="cmtTitle" >Leave Comment</div>
+<div class="newCommentBox">
+  <div class="nameLable">Name</div>
+  <input class="nameInput" placeholder="Name"  (input) = 'cName = $event.target.value' type="text"  [(ngModel)]="cName"> 
+  <div class="commentLabel">Comment</div>
+  <textarea type="text" class="commentInput" rows="3"  (input) = 'cComment = $event.target.value' placeholder="Add comment" [(ngModel)]="cComment"></textarea>
+  <input class="submitBtn" (click)="addComment($event)" type="button" value="Post Comment">
+</div>
+
 <div *ngIf="comments">
     <div class="commentDisplayBox" *ngFor="let comment of comments.comments" >
       <div class="commenterName">{{comment.name}}</div>
@@ -10,12 +19,5 @@
 </div>
 
 
-<div class="cmtTitle" >Leave Comment</div>
-<div class="newCommentBox">
-  <div class="nameLable">Name</div>
-  <input class="nameInput" placeholder="Name"  (input) = 'cName = $event.target.value' type="text"  [(ngModel)]="cName">
-  <div class="commentLabel">Comment</div>
-  <input type="text" class="commentInput"   (input) = 'cComment = $event.target.value' placeholder="Add comment" [(ngModel)]="cComment">
-  <input class="submitBtn" (click)="addComment($event)" type="button" value="Post Comment">
-</div>
+
 

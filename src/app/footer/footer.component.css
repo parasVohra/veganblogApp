@@ -1,18 +1,18 @@
 .footerBox{
     bottom: 0;
     width: 100vw;
-    height: 4rem;
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: center;
-    background-color: #212121;
+    background-color: #1f2d0f;
     color: white;
+    padding-bottom: 0.5rem;
 }
 .footerLink{
     padding-left: 4vw;
 }
 .Icon{
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
     margin-right: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
