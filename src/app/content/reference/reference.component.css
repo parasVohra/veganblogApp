@@ -1,0 +1,34 @@
+.refWrapper{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-weight: bold;
+ 
+}
+
+.refText{
+    margin-top: 2rem;
+    text-align: inherit;
+
+}
+
+@media only screen and (min-width: 768px){
+    .refWrapper{
+        height: calc(100vh - 20rem);
+        margin-left: 15vw;
+        margin-right: 15vw;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        font-family: 'Oswald', sans-serif;
+        font-weight: normal;
+    }
+}
