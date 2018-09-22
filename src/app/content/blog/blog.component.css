@@ -87,7 +87,7 @@
         margin-right: auto;
         margin-top: 1rem;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
     }
 }
