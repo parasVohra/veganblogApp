@@ -3,12 +3,12 @@
     <app-slider></app-slider>
   </div>
   <div class="htitle" >What's New ?</div>
-  <div class="blogRef" [routerLink]="['/blog', blogs.blogId]">
+  <div class="blogRef" routerLink="/blogs">
     <div class="blogThumText"> {{blogs.blogTitle}}</div>
     <div class="blogThumImg"  [style.background-image]="'url(' + blogs.blogImage + ')'"></div>
     <div class="blogBtn">More</div>
   </div>
-  <div class="recipeRef" [routerLink]="['/recipe', recipe.recipeId]">
+  <div class="recipeRef" routerLink="/recipes">
     <div class="recipeThumText"> {{recipe.recipeTitle}}</div>
     <div class="recipeThumImg"  [style.background-image]="'url(' + recipe.coverImage + ')'"></div>
     <div class="recipeBtn">More</div>
