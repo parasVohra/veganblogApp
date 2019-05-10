@@ -16,6 +16,7 @@
 }
 
 .RecipeTitles{
+    cursor: pointer;
     font-family: 'Love Ya Like A Sister', cursive;
     font-weight: bold;
    background-color: #1f2d0f;
@@ -32,6 +33,7 @@
 }
 
 .RecipeImage{
+    cursor: pointer;
    background-color: salmon;
    grid-column: 1 / 4;
    grid-row:   2 / 3; 

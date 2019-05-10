@@ -1,5 +1,11 @@
 <div class="headerContainer">
   <div class="logo" routerLink="/" >The VeganHood</div>
+  <div class="menuBoxLarge">
+      <div class="home LinkLarge" [routerLinkActiveOptions]="{ exact: true}" routerLinkActive="activeRoute" routerLink="/" (click)="hideMenu()">Home</div>
+      <div class="blogList LinkLarge" routerLinkActive="activeRoute" routerLink="/blogs" (click)="hideMenu()">Blog</div>
+      <div class="recipe LinkLarge" routerLinkActive="activeRoute" routerLink="/recipes" (click)="hideMenu()">Recipe</div>
+      <div class="reference LinkLarge" routerLinkActive="activeRoute" routerLink="/reference" (click)="hideMenu()">Refrences</div>
+  </div>
   <div class="menuBtn" (click)="showMenu()">
     <div class="firstBar" [@barHide]="barState"></div>
     <div class="secondBar" [@barNRotate]="stateN"></div>

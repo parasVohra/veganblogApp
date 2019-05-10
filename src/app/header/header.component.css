@@ -6,89 +6,60 @@
     line-height: 5rem;
     width: 100vw;
     background-color: #1f2d0f;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30vw;
+    grid-template-areas: 
+    "logo menuLarge";
 }
 .logo{
+    grid-area: logo;
     color: #afbf0e;
     font-family: 'Love Ya Like A Sister', cursive;
-    font-size: 9vw;
+    font-size: 3.5vw;
     margin-left: 1rem;
+    
 }
 .activeRoute{
     color: orange;
     border: none;
 }
-.Link{
+.LinkLarge{
+    display: inline;
+    cursor: pointer;
     font-family: 'Varela Round', sans-serif;
     font-weight: normal;
     border:none;
-    margin-left: 8vw;
-    font-size: 8vw;
+    margin-left: 2vw;
+    font-size: 2vw;
     
 
 }
 
-
-.menuBtn{
-    position: fixed;
-    background-color: transparent;
-    right: 1.5rem;
-    width: 3rem;
-    height: 5rem;
-    top: 1.5rem;
-    z-index: 5;
+.menuBoxLarge{
+    grid-area: menuLarge;
+    color:#afbf0e;
 }
 
 .menuBox{
-    display: block;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color:#1f2d0f;
-    right: -140%;
-    top:0;
-    color: darkgrey;
-    padding-top: 12vw;
-    z-index: 4;
+    display: none;
 }
 
 
-.firstBar{
-    position: relative;
-    float: left;
-    background-color: orange;
-    border-radius: 2rem;
-    width: 100%;
-    height: 0.3rem;
-    margin-bottom: 0.3rem;
-}
-.secondBar{
-    position: relative;
-    float: left;
-    background-color: orange;
-    border-radius: 2rem;
-    width: 100%;
-    height: 0.3rem;  
-    margin-bottom: 0.3rem;
-}
-.thirdBar{
-    position: relative;
-    background-color: orange;
-    margin-top: 0.6rem;
-    border-radius: 2rem;
-    width: 100%;
-    height: 0.3rem;                     
-}
-.fourthBar{
-    position: relative;
-    float: left;
-    background-color: orange;
-    border-radius: 2rem;
-    width: 100%;
-    height: 0.3rem;  
-}
 
-
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 768px){
+    .headerContainer{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 5rem;
+        line-height: 5rem;
+        width: 100vw;
+        background-color: #1f2d0f;
+    }
+    .menuBoxLarge{
+       display: none;
+    }
     .Link{
         font-family: 'Varela Round', sans-serif;
         font-weight: normal;
@@ -97,10 +68,63 @@
         font-size: 4vw;
         outline: 0;
     }
-    .logo{
-        color: #afbf0e;
-        font-family: 'Love Ya Like A Sister', cursive;
-        font-size: 3.5rem;
-        margin-left: 1rem;
+    .menuBtn{
+        position: fixed;
+        background-color: transparent;
+        right: 1.5rem;
+        width: 3rem;
+        height: 5rem;
+        top: 1.5rem;
+        z-index: 5;
     }
+    
+    .menuBox{
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color:#1f2d0f;
+        right: -140%;
+        top:0;
+        color: darkgrey;
+        padding-top: 12vw;
+        z-index: 4;
+    }
+    
+    
+    .firstBar{
+        position: relative;
+        float: left;
+        background-color: orange;
+        border-radius: 2rem;
+        width: 100%;
+        height: 0.3rem;
+        margin-bottom: 0.3rem;
+    }
+    .secondBar{
+        position: relative;
+        float: left;
+        background-color: orange;
+        border-radius: 2rem;
+        width: 100%;
+        height: 0.3rem;  
+        margin-bottom: 0.3rem;
+    }
+    .thirdBar{
+        position: relative;
+        background-color: orange;
+        margin-top: 0.6rem;
+        border-radius: 2rem;
+        width: 100%;
+        height: 0.3rem;                     
+    }
+    .fourthBar{
+        position: relative;
+        float: left;
+        background-color: orange;
+        border-radius: 2rem;
+        width: 100%;
+        height: 0.3rem;  
+    }
+    
 }

@@ -37,6 +37,7 @@
 }
 
 .blogThumImg{
+    cursor: pointer;
     grid-row: 3/10;
     grid-column: 2/8;
     box-shadow: 3px 3px 13px #000000b5;
@@ -48,6 +49,7 @@
 }
 
 .blogThumText{
+    cursor: pointer;
     font-family: 'Love Ya Like A Sister', cursive;
     font-weight: bold;
     grid-row: 4/11;
@@ -59,6 +61,7 @@
 }
 
 .blogBtn{
+    cursor: pointer;
     grid-row: 9/10;
     grid-column: 9/11;
     background-color: #1f2d0f;
@@ -76,6 +79,7 @@
 }
 
 .recipeThumText{
+    cursor: pointer;
     font-family: 'Love Ya Like A Sister', cursive;
     font-weight: bold;
     background-color: #1f2d0f;
@@ -89,6 +93,7 @@
 }
 
 .recipeThumImg{
+    cursor: pointer;
     grid-row: 3/10;
     grid-column: 6/12;
     box-shadow: 3px 3px 13px #000000b5;
@@ -100,6 +105,7 @@
 }
 
 .recipeBtn{
+    cursor: pointer;
     grid-row: 9/10;
     grid-column: 3/5;
     font-size: 1.5rem;

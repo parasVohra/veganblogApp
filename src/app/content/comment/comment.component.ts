@@ -50,28 +50,13 @@ export class CommentComponent implements OnInit {
 
     this.getComments()
 
-    // this.pageType = this.activeRoute.snapshot.data['type']
-    // this.activeRoute.params.subscribe(params => { 
-    //   this.pageId = params['id']; 
-    // })
 
-
-    // for (let comment of this.comments){
-
-    //   console.log(comment.type+ "and " + comment.typeID)
-    //   if (this.pageType == comment.type && this.pageId == comment.typeID){
-    //     this.match = true;
-    //   }
-    // }
+    //log for test
+    console.log("init runned")
     
-    
-
     //reset values in inputs 
     this.cName ='';
     this.cComment= '';
-
-    // console.log("page Id "+this.pageId + ", and page type is "+ this.pageType)
-    // console.log(this.match);
 
     this.dateFormat();
      
@@ -123,38 +108,36 @@ export class CommentComponent implements OnInit {
     }
     else {
       // getting active page type and id
-    this.id = this.activeRoute.params.subscribe(params => { 
-      this.typeID = params['id']; 
-      console.log(this.typeID + ", " + this.activeRoute.snapshot.data['type']);
-    })
-
- 
-    let commentData =  {
-      name: this.cName,
-      content: this.cComment,
-      type: this.activeRoute.snapshot.data['type'],
-      typeID: this.typeID
-      
-    }
-
-    console.log(commentData)
-
-    let body = JSON.stringify(commentData)
-    
-    //sending post request to server to post comments data 
-    this.httpClient.post('/post/comment',  body, this.options)
-    .subscribe(
-      (res : Response) =>{
-        console.log(res)
-        this.ngOnInit();
-      
-      } 
-    )
+        this.id = this.activeRoute.params.subscribe(params => { 
+          this.typeID = params['id']; 
+          console.log(this.typeID + ", " + this.activeRoute.snapshot.data['type']);
+        })
 
     
-    // reseting input value after post request 
-    this.cName ='';
-    this.cComment = '';
+        let commentData =  {
+          name: this.cName,
+          content: this.cComment,
+          type: this.activeRoute.snapshot.data['type'],
+          typeID: this.typeID
+          
+        }
+
+        console.log(commentData)
+
+        let body = JSON.stringify(commentData)
+        
+        //sending post request to server to post comments data 
+        this.httpClient.post('/post/comment',  body, this.options)
+        .subscribe(
+          (res : Response) =>{
+            console.log(res)
+        })
+
+    
+      // reseting input value after post request 
+      this.cName ='';
+      this.cComment = '';
+      this.ngOnInit();
     }
     
   }

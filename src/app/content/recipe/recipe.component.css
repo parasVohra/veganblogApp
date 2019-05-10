@@ -43,6 +43,7 @@
     grid-area: ingBtn;
     text-align: center;
     line-height: 3rem;
+    cursor: pointer;
 }
 
 .ing{
@@ -62,6 +63,7 @@
     grid-area: dirBtn;
     text-align: center;
     line-height: 3rem;
+    cursor: pointer;
 }
 
 .recipeContentBox{
