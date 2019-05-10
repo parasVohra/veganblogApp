@@ -26,7 +26,7 @@ export class BlogComponent implements OnInit {
 
     this.sub= this.activeRoute.params.subscribe(params => { 
       this.id = params['id']; 
-      console.log(this.id);
+  
     })
   }
 
@@ -34,7 +34,6 @@ export class BlogComponent implements OnInit {
 
   blogData(){
     return this.Data.getData().subscribe(data => {
-       console.log(data.blogs[this.id])
       this.blogs = data.blogs[this.id] ,
       error => console.log("Error: ", error)
      });

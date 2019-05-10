@@ -18,8 +18,7 @@ export class RecipeListComponent implements OnInit {
  
    recipeData(){
     return this.data.getRecipes().subscribe(data => {
-       console.log(data);
- 
+
       this.recipe = data,
       error => console.log("Error: ", error)
      });

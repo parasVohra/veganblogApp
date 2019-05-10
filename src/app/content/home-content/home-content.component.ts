@@ -14,7 +14,7 @@ export class HomeContentComponent implements OnInit {
   blogs:any;
   recipe: any
   ngOnInit() {
-   console.log("edited in mac");
+
    this.blogData();
    this.recipeData();
   }
@@ -22,10 +22,10 @@ export class HomeContentComponent implements OnInit {
 
   blogData(){
     return this.data.getData().subscribe(data => {
-       console.log(data.blogs[(data.blogs.length)-1]);
+      // console.log(data.blogs[(data.blogs.length)-1]);
  
       this.blogs = data.blogs[(data.blogs.length)-1],
-      error => console.log("Error: ", error)
+      error => console.log("Error: ", error);
      });
    }
 

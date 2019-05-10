@@ -2,8 +2,8 @@
     position: relative;
     margin: 0;
     padding: 0;
-    height: 5rem;
-    line-height: 5rem;
+    height: 6rem;
+    line-height: 6rem;
     width: 100vw;
     background-color: #1f2d0f;
     display: grid;
@@ -16,7 +16,7 @@
     grid-area: logo;
     color: #afbf0e;
     font-family: 'Love Ya Like A Sister', cursive;
-    font-size: 3.5vw;
+    font-size: 3vw;
     margin-left: 1rem;
     
 }
@@ -59,6 +59,14 @@
     }
     .menuBoxLarge{
        display: none;
+    }
+    .logo{
+        grid-area: logo;
+        color: #afbf0e;
+        font-family: 'Love Ya Like A Sister', cursive;
+        font-size: 9vw;
+        margin-left: 1rem;
+        
     }
     .Link{
         font-family: 'Varela Round', sans-serif;

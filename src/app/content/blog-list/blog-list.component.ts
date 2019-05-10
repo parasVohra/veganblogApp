@@ -19,7 +19,6 @@ export class BlogListComponent implements OnInit {
 
   blogData(){
    return this.data.getData().subscribe(data => {
-      console.log(data);
 
      this.blogs = data,
      error => console.log("Error: ", error)

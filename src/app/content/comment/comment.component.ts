@@ -50,9 +50,6 @@ export class CommentComponent implements OnInit {
 
     this.getComments()
 
-
-    //log for test
-    console.log("init runned")
     
     //reset values in inputs 
     this.cName ='';
@@ -73,15 +70,15 @@ export class CommentComponent implements OnInit {
       this.pageId = params['id']; 
     })
   
-    console.log('getcomments runned')
+   
     this.httpClient.post('/post/Comments',{pageType:this.pageType , pageId : this.pageId}, this.options).subscribe( 
-      data => { this.comments = data, console.log(this.comments)},
+      data => { this.comments = data},
       (err) => console.error(err))
       
   }
 
   dateFormat(){
-    console.log("runned")
+    
     
   }
 
@@ -96,7 +93,7 @@ export class CommentComponent implements OnInit {
 
 // get input value from front end and send it to server 
   addComment(event){
-    console.log(this.cName+", "+ this.cComment);
+    
 
     if( this.cName == ""){
       this.message = 'Please enter name';
@@ -110,7 +107,7 @@ export class CommentComponent implements OnInit {
       // getting active page type and id
         this.id = this.activeRoute.params.subscribe(params => { 
           this.typeID = params['id']; 
-          console.log(this.typeID + ", " + this.activeRoute.snapshot.data['type']);
+          //console.log(this.typeID + ", " + this.activeRoute.snapshot.data['type']);
         })
 
     
@@ -122,7 +119,7 @@ export class CommentComponent implements OnInit {
           
         }
 
-        console.log(commentData)
+        //console.log(commentData)
 
         let body = JSON.stringify(commentData)
         
@@ -130,7 +127,7 @@ export class CommentComponent implements OnInit {
         this.httpClient.post('/post/comment',  body, this.options)
         .subscribe(
           (res : Response) =>{
-            console.log(res)
+            //console.log(res)
         })
 
     
@@ -144,12 +141,12 @@ export class CommentComponent implements OnInit {
 
 
   deleteOne(){
-    console.log("clicked")
+   
     let body = { name: "Parasvohra"} 
     this.httpClient.post('/post/deleteOne',  body, this.options)
     .subscribe(
       (res : Response) =>{
-        console.log(res)
+       // console.log(res)
         this.ngOnInit();
       
       } 
