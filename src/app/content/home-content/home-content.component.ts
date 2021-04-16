@@ -31,7 +31,7 @@ export class HomeContentComponent implements OnInit {
 
    recipeData(){
     return this.data.getRecipes().subscribe(data => {
-       console.log(data.recipes[(data.recipes.length)-1]);
+       //console.log(data.recipes[(data.recipes.length)-1]);
  
       this.recipe = data.recipes[(data.recipes.length)-1],
       error => console.log("Error: ", error)

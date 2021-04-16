@@ -1,14 +1,17 @@
 {
   "name": "vegan-blog-app",
   "version": "0.0.0",
+  "homepage": "http://parasVohra.github.io/veganblogApp",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && nodemon server.js",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start:server": "nodemon server.js"
+    "start:server": "nodemon server.js",
+    "predeploy": "ng build --prod --base-href 'https://parasVohra.github.io/veganblogApp/'",
+    "deploy": "gh-pages -d dist/veganBlogApp"
   },
   "private": true,
   "dependencies": {
@@ -39,8 +42,10 @@
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "angular-cli-ghpages": "^1.0.0-rc.1",
     "codelyzer": "~4.2.1",
     "express": "^4.16.3",
+    "gh-pages": "^3.1.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~1.7.1",
