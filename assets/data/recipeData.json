@@ -1,66 +1,66 @@
 {
-    "recipes":[
-        {
-            "recipeId": 0,
-            "recipeTitle": "Oil-Free Bread Recipe",
-            "coverImage": "../../../assets/images/Bread.jpg",
-            "cookingTime" : "45 min",
-            "recipeImages": [
-                "../../../assets/images/Bread.jpg",
-                "../../../assets/images/Combination.jpg"
-            ] ,
-            "directions": [
-                "Put all the solid ingredients on a medium size bowl, then add water.",
-                "Mix the dough to reach the right consistency.",
-                "Put a lid or a plastic wrap on the bowl and leave for 1-2hrs",
-                "Take the expanded dough, coat it with light white flour (specially the bottom) and use a parchment paper so it doesn’t stick, then place on the oven tray",
-                "Pre-heat oven to 400 F, then put it in the oven",
-                "Bake until 30mins-45mins",
-                "Enjoy!"
-            ],
-            "ingredients": [
-                "1 cups of White flour",
-                "3 cups of Whole wheat flour",
-                "1 pack of Yeast",
-                "Pinch of Salt",
-                "Pinch of Brown Sugar",
-                "Some Oats (optional)",
-                "Some Flax seeds (optional)",
-                "Water"
-            ]
-        },
-        {
-            "recipeId": 1,
-            "recipeTitle": "Oil-free Tofu and Broccoli Pasta",
-            "coverImage": "../../../assets/images/Pasta.jpg",
-            "cookingTime" : "45 min",
-            "recipeImages": [
-                "../../../assets/images/Pasta.jpg",
-                "../../../assets/images/Combination.jpg"
-            ] ,
-            "directions": [
-                "Cook the pasta with a little bit of salt (Or no salt)",
-                "Put 1/4 glass of water on the cooking pan and cook sliced onions and garlic until it changes colour",
-                "Put some seasoning to the onion and garlic mix to put some flavour. We used turmeric and chili powder on this one",
-                "Blend the tomatoes with the chili pepper, then put it in the pan",
-                "Add some more seasoning. We used Cayenne and paprika powder",
-                "Add 100 ml of ketchup",
-                "Add Salt and Pepper",
-                "Add tofu and Broccoli",
-                "Cook till it’s done",
-                "Enjoy!"
-            ],
-            "ingredients": [
-                "375 g of Whole wheat pasta (You can use whatever type pasta you have)",
-                "350 g of Tofu",
-                "250 g of broccoli",
-                "2 pcs Tomatoes",
-                "1 Red hot chili pepper",
-                "1 Whole Onions",
-                "1/2 Garlic",
-                "100ml ketchup",
-                "Spices (We used Turmeric, Chili powder, Cayenne, Paprika, Salt, Pepper, Oregano and thyme)"
-            ]
-        }
-    ]
+  "recipes": [
+    {
+      "recipeId": 0,
+      "recipeTitle": "Oil-Free Bread Recipe",
+      "coverImage": "../../../veganblogApp/assets/images/Bread.jpg",
+      "cookingTime": "45 min",
+      "recipeImages": [
+        "../../../veganblogApp/assets/images/Bread.jpg",
+        "../../../veganblogApp/assets/images/Combination.jpg"
+      ],
+      "directions": [
+        "Put all the solid ingredients on a medium size bowl, then add water.",
+        "Mix the dough to reach the right consistency.",
+        "Put a lid or a plastic wrap on the bowl and leave for 1-2hrs",
+        "Take the expanded dough, coat it with light white flour (specially the bottom) and use a parchment paper so it doesn’t stick, then place on the oven tray",
+        "Pre-heat oven to 400 F, then put it in the oven",
+        "Bake until 30mins-45mins",
+        "Enjoy!"
+      ],
+      "ingredients": [
+        "1 cups of White flour",
+        "3 cups of Whole wheat flour",
+        "1 pack of Yeast",
+        "Pinch of Salt",
+        "Pinch of Brown Sugar",
+        "Some Oats (optional)",
+        "Some Flax seeds (optional)",
+        "Water"
+      ]
+    },
+    {
+      "recipeId": 1,
+      "recipeTitle": "Oil-free Tofu and Broccoli Pasta",
+      "coverImage": "../../../veganblogApp/assets/images/Pasta.jpg",
+      "cookingTime": "45 min",
+      "recipeImages": [
+        "../../../veganblogApp/assets/images/Pasta.jpg",
+        "../../../veganblogApp/assets/images/Combination.jpg"
+      ],
+      "directions": [
+        "Cook the pasta with a little bit of salt (Or no salt)",
+        "Put 1/4 glass of water on the cooking pan and cook sliced onions and garlic until it changes colour",
+        "Put some seasoning to the onion and garlic mix to put some flavour. We used turmeric and chili powder on this one",
+        "Blend the tomatoes with the chili pepper, then put it in the pan",
+        "Add some more seasoning. We used Cayenne and paprika powder",
+        "Add 100 ml of ketchup",
+        "Add Salt and Pepper",
+        "Add tofu and Broccoli",
+        "Cook till it’s done",
+        "Enjoy!"
+      ],
+      "ingredients": [
+        "375 g of Whole wheat pasta (You can use whatever type pasta you have)",
+        "350 g of Tofu",
+        "250 g of broccoli",
+        "2 pcs Tomatoes",
+        "1 Red hot chili pepper",
+        "1 Whole Onions",
+        "1/2 Garlic",
+        "100ml ketchup",
+        "Spices (We used Turmeric, Chili powder, Cayenne, Paprika, Salt, Pepper, Oregano and thyme)"
+      ]
+    }
+  ]
 }
